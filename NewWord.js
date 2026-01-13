@@ -83,7 +83,7 @@ NewWord.prototype.update = function () {
 };
 
 NewWord.prototype.show = function () {
-  textFont(font);
+  //textFont(font);
   textSize(16);
   fill(255); //insert this.lifeSpan as second argument if isDead functions is implemented
   textAlign(CENTER, CENTER);
