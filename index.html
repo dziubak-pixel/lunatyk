@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sketch</title>
-    <link rel="stylesheet" href="https://use.typekit.net/sjy2bgo.css">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="NewWord.js"></script>
+    <script src="RandomWrd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rita"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   </head>
 
   <body>
-    <script src="sketch.js"></script>
-    <div id="leftHalf"></div>
-    <div id="rightHalf"></div>
+    <div id="top-header"><h1 id="project-name">lunatyk</h1></div>
+    <div id="composition">
+      <div id="generated-poem">
+        <p id="poem">hello there </br> 
+        this is random poem generator </br>
+        start type something </br>
+        see what happen next</p>
+      </div>
+      <div id="canvas">
+        
+      </div>
+    </div>
+    <div id="buttons">
+      <button class="button" id="playPause">play/pause</button>
+      <button class="button" id="editLastWord">edit last word</button>
+      <button class="button" id="restartBtn">restart</button>
+      <button class="button" id="addTitle">add a title</button>
+      <button class="button" id="saveBtn">save</button>
+      <div id="volume">volume</div>
+      <div id="seedControl"></div>
+
+    </div>
   </body>
 </html>
