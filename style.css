@@ -1,46 +1,99 @@
 html, body {
   margin: 0;
-  padding:0;
-  font-size: 24px;
+  padding: 0;
+  height: 100vh;
   display: flex;
-  background-color: white;
-
-}
-
-div#leftHalf {
-  margin-right: 10px;
+  flex-direction: column;
+  --stroke-weight: 0px;
+  background-color: #fff;
 }
 
 
 div {
- width: 50vw;
- height: 100vh;
- display: flex;
- align-items: center;
 
+  
+  flex: 1;
 }
 
-
-
-
-video {
-  isolation: isolate;
-  width: 100vh;
+#top-header {
+  flex: 0.5;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 0px 0px var(--stroke-weight) 0px;
+  
 }
 
-#video-1, #video-0, #video-2 {
+#project-name {
+  font-size: 18px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+}
+
+#composition {
+  display: flex;
+  flex: 8;
+  outline: none;
+  border: none;
+
+  
+}
+
+#generated-poem  {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+}
+
+#poem {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+#canvas  {
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
   mix-blend-mode: difference;
 }
 
-p {
-  display: block;
-  font-family: "adobe-jenson-pro", serif;
-  font-weight: 400;
-  font-style: normal;
-  max-width: 75%;
-  margin-left: 100px;
+
+#buttons {
+  
+  display: flex;
+  justify-content: stretch;
+  flex: 0.5;
+
 }
 
-canvas {
-  display: block;
+
+
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  
+  border: solid;
+  border-width: var(--stroke-weight) var(--stroke-weight) 0px 0px;
+}
+
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+  border: none;
 }
