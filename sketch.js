@@ -23,9 +23,9 @@ let volumeControl, seedControl;
 let x = 0;
 let y = 0;
 
-function preload() {
-  font = loadFont("/assets/Lora-Regular.ttf");
-}
+//function preload() {
+  //font = loadFont("/assets/Lora-Regular.ttf");
+//}
 
 function setup() {
   cnv = createCanvas(100, 100);
@@ -225,7 +225,7 @@ function draw() {
 
   noStroke();
   fill(255);
-  textFont(font);
+  //textFont(font);
   textAlign(CENTER);
   textSize(16);
   text(userInput, width / 2, height / 2);
